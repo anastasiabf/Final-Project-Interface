@@ -28,6 +28,8 @@ import imblearn
 from imblearn.pipeline import Pipeline as imbpipeline
 from imblearn.over_sampling import SMOTE
 
+os.environ['PYOPENGL_PLATFORM'] = 'egl'
+
 #---------------------------------------------Preprocessing---------------------------------------
 def load_image(img):
     im = Image.open(img)
